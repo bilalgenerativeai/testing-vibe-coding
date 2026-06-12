@@ -2,67 +2,476 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            display: flex;
-            gap: 20px;
-        }
-
-        .box {
-            background-color: #006400;
-            /* Royal green */
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 200px;
-        }
-
-        .box-blue {
-            background-color: #4169E1;
-            /* Royal blue */
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 200px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartDocs-AI — Your 24/7 Interview Coach</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <h2>Heading 1</h2>
-            <p>Paragraph 1</p>
-        </div>
-        <div class="box">
-            <h2>Heading 2</h2>
-            <p>Paragraph 2</p>
-        </div>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav>
+    <div class="logo">Smart<span>Docs</span>-AI</div>
+    <ul class="nav-links">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#roles">Roles</a></li>
+      <li><a href="#demo">Try It</a></li>
+      <li><a href="#about">Contact</a></li>
+    </ul>
+    <a href="#demo" class="nav-cta">Start Practicing →</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      AI-Powered Interview Coach
     </div>
-    <div class="container">
-        <div class="box-blue">
-            <h2>Heading 3</h2>
-            <p>Paragraph 3</p>
-        </div>
-        <div class="box-blue">
-            <h2>Heading 4</h2>
-            <p>Paragraph 4</p>
-        </div>
+
+    <h1>
+      Ace Your Next<br />
+      <span class="accent">Interview</span><br />
+      <span class="dim">Before You Walk In.</span>
+    </h1>
+
+    <p class="hero-sub">
+      SmartDocs-AI generates role-specific questions, evaluates your answers
+      using the STAR framework, and gives you real-time feedback — 24/7, no
+      human coach needed.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#demo" class="btn-primary">Try a Mock Interview</a>
+      <a href="#how" class="btn-secondary">See How It Works</a>
     </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Job Roles</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">STAR</div>
+        <div class="stat-label">Framework</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Available</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">RAG</div>
+        <div class="stat-label">Powered</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section id="how">
+    <div class="section-header">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">From Upload to Feedback<br />in 5 Simple Steps</h2>
+      <p class="section-sub">
+        SmartDocs-AI walks you through a complete mock interview loop, from
+        role selection to a scored, actionable result.
+      </p>
+    </div>
+
+    <div class="steps-track">
+      <div class="step">
+        <div class="step-num"><span class="step-icon">📄</span></div>
+        <div class="step-title">Upload Your JD</div>
+        <div class="step-desc">
+          Paste a job description or select a role. Our KB retrieves relevant
+          context from curated PDFs.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"><span class="step-icon">🤖</span></div>
+        <div class="step-title">AI Generates Questions</div>
+        <div class="step-desc">
+          Botpress LLM creates tailored interview questions based on your
+          specific role and level.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"><span class="step-icon">🎙️</span></div>
+        <div class="step-title">You Answer</div>
+        <div class="step-desc">
+          Type your response in the chat window. Take your time — there's no
+          timer pressure.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"><span class="step-icon">⚡</span></div>
+        <div class="step-title">STAR Evaluation</div>
+        <div class="step-desc">
+          Your answer is scored across Situation, Task, Action, and Result
+          dimensions automatically.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num step-num--gold"><span class="step-icon">🏆</span></div>
+        <div class="step-title">Get Feedback</div>
+        <div class="step-desc">
+          Receive a score, written feedback, and what to improve — ready to
+          share or act on immediately.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════════ -->
+  <section id="features">
+    <div class="features-inner">
+      <div class="section-header">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">
+          Everything You Need to<br />Interview with Confidence
+        </h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card highlight">
+          <div class="feat-icon">⭐</div>
+          <div class="feat-title">STAR Framework Scoring</div>
+          <p class="feat-desc">
+            Your answers are automatically broken down and scored across all
+            four STAR dimensions — Situation, Task, Action, Result — so you
+            know exactly where you're strong and where to improve. No vague
+            feedback, just precise, actionable scores.
+          </p>
+          <span class="feat-tag">Core Feature</span>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">📚</div>
+          <div class="feat-title">RAG Knowledge Base</div>
+          <p class="feat-desc">
+            Questions are retrieved from curated PDF question banks uploaded
+            into Botpress's Knowledge Base, ensuring role-specific, contextual
+            content every session.
+          </p>
+          <span class="feat-tag">Botpress KB</span>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">💬</div>
+          <div class="feat-title">Conversational Interface</div>
+          <p class="feat-desc">
+            Built on Botpress's no-code canvas — a smooth, chat-like flow that
+            feels natural and keeps your session state throughout the interview.
+          </p>
+          <span class="feat-tag">Botpress</span>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">⚡</div>
+          <div class="feat-title">Instant Feedback Loop</div>
+          <p class="feat-desc">
+            Feedback is generated immediately after each answer using Botpress's
+            built-in GPT-4 LLM — no waiting, no submission delays.
+          </p>
+          <span class="feat-tag">GPT-4 Powered</span>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🎯</div>
+          <div class="feat-title">Role-Specific Questions</div>
+          <p class="feat-desc">
+            Questions are dynamically generated per role — Software Engineer,
+            Business Analyst, or Marketing — pulled from pre-curated PDF banks.
+          </p>
+          <span class="feat-tag">Multi-role</span>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🚀</div>
+          <div class="feat-title">Zero Backend Required</div>
+          <p class="feat-desc">
+            Deployed on Vercel with a static HTML/CSS/JS frontend. All logic
+            runs inside Botpress — no server management needed for the MVP.
+          </p>
+          <span class="feat-tag">Vercel + Botpress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       JOB ROLES
+  ═══════════════════════════════════════ -->
+  <section id="roles">
+    <div class="section-header">
+      <div class="section-label">Supported Roles</div>
+      <h2 class="section-title">Practice for Your Exact Role</h2>
+      <p class="section-sub">
+        SmartDocs-AI has dedicated question banks and evaluation criteria
+        tailored to each career track.
+      </p>
+    </div>
+
+    <div class="roles-grid">
+      <div class="role-card active" onclick="setRole(this)">
+        <span class="role-emoji">💻</span>
+        <div class="role-name">Software Engineer</div>
+        <div class="role-count">45+ questions</div>
+      </div>
+      <div class="role-card" onclick="setRole(this)">
+        <span class="role-emoji">📊</span>
+        <div class="role-name">Business Analyst</div>
+        <div class="role-count">38+ questions</div>
+      </div>
+      <div class="role-card" onclick="setRole(this)">
+        <span class="role-emoji">📣</span>
+        <div class="role-name">Marketing Manager</div>
+        <div class="role-count">40+ questions</div>
+      </div>
+      <div class="role-card" onclick="setRole(this)">
+        <span class="role-emoji">📦</span>
+        <div class="role-name">Product Manager</div>
+        <div class="role-count">Coming soon</div>
+      </div>
+      <div class="role-card" onclick="setRole(this)">
+        <span class="role-emoji">🎨</span>
+        <div class="role-name">UX Designer</div>
+        <div class="role-count">Coming soon</div>
+      </div>
+      <div class="role-card" onclick="setRole(this)">
+        <span class="role-emoji">💼</span>
+        <div class="role-name">HR / People Ops</div>
+        <div class="role-count">Coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       DEMO
+  ═══════════════════════════════════════ -->
+  <section id="demo">
+    <div class="demo-inner">
+
+      <div class="demo-text">
+        <div class="section-header">
+          <div class="section-label">Live Demo</div>
+          <h2 class="section-title">See It in<br />Action</h2>
+        </div>
+        <ul class="demo-features">
+          <li>Paste your JD or select a role to start</li>
+          <li>Receive AI-generated behavioural questions</li>
+          <li>Type your answer in natural language</li>
+          <li>Get an instant STAR score out of 10</li>
+          <li>Read written feedback with improvement tips</li>
+        </ul>
+        <a href="#" class="btn-primary">Embed Your Botpress Bot →</a>
+        <p class="demo-note">
+          Replace the chat preview below with your Botpress embed code
+        </p>
+      </div>
+
+      <div class="chat-window">
+        <div class="chat-header">
+          <div class="chat-header-dots">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+          </div>
+          <span class="chat-title">SmartDocs-AI — Software Engineer Session</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+          <div class="msg bot">
+            <div class="msg-avatar">AI</div>
+            <div class="msg-bubble">
+              👋 Welcome to SmartDocs-AI! I'll be your interview coach today.
+              Which role are you preparing for?
+            </div>
+          </div>
+          <div class="msg user">
+            <div class="msg-avatar">U</div>
+            <div class="msg-bubble">Software Engineer at a fintech startup</div>
+          </div>
+          <div class="msg bot">
+            <div class="msg-avatar">AI</div>
+            <div class="msg-bubble">
+              Great choice! Here's your first question:<br /><br />
+              <strong class="q-label">Q1:</strong> Tell me about a time you had
+              to debug a critical production issue under pressure. Walk me
+              through your process.
+            </div>
+          </div>
+          <div class="msg user">
+            <div class="msg-avatar">U</div>
+            <div class="msg-bubble">
+              At my last job, our payment service went down on Black Friday. I
+              led the debugging, identified a DB connection pool leak in 20
+              minutes and rolled back the config. Service was restored in under
+              an hour.
+            </div>
+          </div>
+          <div class="msg bot">
+            <div class="msg-avatar">AI</div>
+            <div class="msg-bubble">
+              Good answer! Here's your STAR breakdown:
+              <div class="score-bar">
+                <div class="score-row">
+                  <span class="score-label">Situation</span>
+                  <span class="score-val">8/10</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:80%"></div>
+                </div>
+                <div class="bar-gap"></div>
+                <div class="score-row">
+                  <span class="score-label">Task</span>
+                  <span class="score-val">7/10</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:70%"></div>
+                </div>
+                <div class="bar-gap"></div>
+                <div class="score-row">
+                  <span class="score-label">Action</span>
+                  <span class="score-val">9/10</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:90%"></div>
+                </div>
+                <div class="bar-gap"></div>
+                <div class="score-row">
+                  <span class="score-label">Result</span>
+                  <span class="score-val">8/10</span>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:80%"></div>
+                </div>
+              </div>
+              <em class="tip-text">
+                💡 Tip: Quantify the business impact (e.g. transactions saved,
+                revenue protected) to strengthen your Result score.
+              </em>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <input class="chat-input" id="chatInput" type="text" placeholder="Type your answer here..." />
+          <button class="chat-send" id="sendBtn">Send</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT / CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="about">
+
+    <div class="about-col">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Built for Real<br />Job Seekers</h2>
+      <p class="about-para">
+        SmartDocs-AI was built as a final-year AI project with one goal: give
+        every student and career-switcher the same quality of interview prep
+        that was once reserved for those who could afford a human coach.
+      </p>
+      <p class="about-para">
+        The system runs on Botpress's no-code canvas with a built-in RAG
+        pipeline over curated PDF question banks, evaluated against the STAR
+        methodology and powered by GPT-4.
+      </p>
+      <div class="about-highlight">
+        "The project idea itself is strong and relevant — giving every user a
+        24/7 personal interview coach."
+      </div>
+      <div class="tech-badges">
+        <div class="tech-badge">
+          <div class="tech-name">Botpress</div>
+          <div class="tech-sub">AI Canvas</div>
+        </div>
+        <div class="tech-badge">
+          <div class="tech-name">Vercel</div>
+          <div class="tech-sub">Deployment</div>
+        </div>
+        <div class="tech-badge">
+          <div class="tech-name">GPT-4</div>
+          <div class="tech-sub">LLM Engine</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-col">
+      <div class="form-title">Get in Touch</div>
+      <div class="form-sub">Have a question or want to collaborate? Drop a message.</div>
+      <div class="contact-form" id="contactForm">
+        <label>Your Name</label>
+        <input type="text" id="inputName" placeholder="e.g. Ali Hassan" />
+        <label>Email Address</label>
+        <input type="email" id="inputEmail" placeholder="you@example.com" />
+        <label>I am a...</label>
+        <select id="inputRole">
+          <option>Final-year Student</option>
+          <option>Fresh Graduate</option>
+          <option>Career Switcher</option>
+          <option>Instructor / Supervisor</option>
+          <option>Other</option>
+        </select>
+        <label>Message</label>
+        <textarea id="inputMessage" rows="4" placeholder="What would you like to say..."></textarea>
+        <button class="btn-primary contact-submit" id="contactSubmit">
+          Send Message
+        </button>
+        <div id="contactStatus" class="contact-status" aria-live="polite"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">SmartDocs-AI</div>
+    <div class="footer-credit">
+      Built with Botpress · Vercel · GPT-4 · STAR Framework
+    </div>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#how">How It Works</a>
+      <a href="#demo">Demo</a>
+      <a href="#about">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/05/11/20/20260511200354-69MSLW06.js" defer></script>
+
 </body>
 
 </html>
